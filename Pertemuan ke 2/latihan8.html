@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<div id="demo">
+		
+	</div>
+	<script type="text/javascript">
+		//membuat variable
+		//ketika kita akan membuat string itu wajib menggunakan tanda petik baik satu atau dua
+		// ketika akan membuat nilai berbentuk angka (int) penulisan tanpa tanda petik
+		//function 
+
+		var x =  document.getElementById('demo');
+		var nilai1 =  4;
+		var nilai2 =  15;
+
+		// cara biasa
+		// x.innerHTML = nilai1 + nilai2;
+
+		//dengan cara menambahkan function
+		// x.innerHTML = tambah(nilai1, nilai2)+ '<br>';
+		// x.innerHTML = kali(nilai1, nilai2);
+		// x.innerHTML = bagi(nilai1, nilai2);
+		x.innerHTML = kurangi(nilai1, nilai2);
+		
+		function tambah(x, y){
+			return x + y;
+		}
+		function kali(x, y){
+			return x * y;
+		}
+		function bagi(x, y){
+			return x / y;
+		}
+		function kurangi(x, y){
+			return x - y;
+		}
+
+
+
+	</script>
+</body>
+</html>
